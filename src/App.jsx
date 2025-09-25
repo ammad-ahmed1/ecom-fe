@@ -9,7 +9,7 @@ export default function App(){
   return (
     <div className="min-h-screen bg-gray-50">
      
-      <main className="container mx-auto p-4">
+      <main className=" mx-auto py-4">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />

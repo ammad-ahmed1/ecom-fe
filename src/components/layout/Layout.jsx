@@ -11,7 +11,7 @@ export default function Layout({ children, showSidebar = false }) {
         {/* Sidebar (optional) */}
         {showSidebar && <Sidebar />}
 
-        <main className={`flex-1 p-4 ${showSidebar ? "ml-0" : "w-full"}`}>
+        <main className={`flex-1 py-4 ${showSidebar ? "ml-0" : "w-full"}`}>
           {children}
         </main>
       </div>
