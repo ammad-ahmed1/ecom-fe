@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      maxWidth: {
+        frame: "1280px",
+      },
       fontFamily: {
         satoshi: ["Satoshi", "sans-serif"],
       },

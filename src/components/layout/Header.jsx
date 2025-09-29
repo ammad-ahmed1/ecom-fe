@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Header() {
   const [showDrawer, setShowDrawer] = useState(false);
   return (
-    <div className="main flex justify-center items-center gap-2  py-2">
+    <div className="main flex justify-center items-center gap-2  py-2 sticky top-0 bg-gray-50 z-10">
       <LeftDrawerMBL showDrawer={showDrawer} />
 
       <div className="logo">

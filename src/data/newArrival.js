@@ -1,0 +1,38 @@
+export const newArrivals = [
+  {
+    id: 1,
+    title: "T-shirt with Tape Details",
+    image: "/images/men/top/pic1.webp",
+    rating: 4.5,
+    totalRating: 5,
+    price: 120,
+  },
+  {
+    id: 2,
+    title: "Skinny Fit Jeans",
+    image: "/images/men/bottom/pic2.webp",
+    rating: 3.5,
+    totalRating: 5,
+    price: 208,
+    oldPrice: 260,
+    discount: "-20%",
+  },
+  {
+    id: 3,
+    title: "Chechered Shirt",
+    image: "/images/men/top/pic3.webp",
+    rating: 4.5,
+    totalRating: 5,
+    price: 180,
+  },
+  {
+    id: 4,
+    title: "Sleeve Striped T-shirt",
+    image: "/images/men/top/pic4.webp",
+    rating: 4.5,
+    totalRating: 5,
+    price: 112,
+    oldPrice: 160,
+    discount: "-30%",
+  },
+];

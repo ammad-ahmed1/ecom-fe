@@ -1,0 +1,36 @@
+export const topSelling = [
+  {
+    id: 1,
+    title: "Vertical Striped Shirt",
+    image: "/images/men/top/pic5.webp",
+    rating: 5.0,
+    totalRating: 5,
+    price: 186,
+    oldPrice: 232,
+    discount: "-20%",
+  },
+  {
+    id: 2,
+    title: "Courage Graphic T-shirt",
+    image: "/images/men/top/pic6.webp",
+    rating: 4.0,
+    totalRating: 5,
+    price: 145,
+  },
+  {
+    id: 3,
+    title: "Loose Fit Bermuda Shorts",
+    image: "/images/men/bottom/pic7.webp",
+    rating: 3.0,
+    totalRating: 5,
+    price: 80,
+  },
+  {
+    id: 4,
+    title: "Faded Skinny Jeans",
+    image: "/images/men/bottom/pic8.webp",
+    rating: 4.5,
+    totalRating: 5,
+    price: 210,
+  },
+];
