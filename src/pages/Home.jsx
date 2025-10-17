@@ -6,6 +6,8 @@ import HotItems from "@/components/homepage/HotItems";
 
 import { newArrivals } from "@/data/newArrival";
 import { topSelling } from "@/data/topSelling";
+import BrowseStyle from "@/components/homepage/BrowseStyle";
+import Testimonials from "@/components/homepage/Testimonials";
 
 export default function Home() {
   return (
@@ -13,14 +15,18 @@ export default function Home() {
       <Hero />
       <Brands />
       <div className="main my-[50px] sm:my-[72px]">
-        <section className="max-w-frame mx-auto text-center">
+        <section className="max-w-frame mx-auto text-center px-4">
           <HotItems heading={"New Arrivals"} products={newArrivals} />
           <div class="max-w-frame mx-auto px-4 xl:px-0">
-            <hr class="h-[1px] border-t-black/10 my-10 sm:my-16"/>
+            <hr class="h-[1px] border-t-black/10 my-10 sm:my-16" />
           </div>
           <HotItems heading={"Top Selling"} products={topSelling} />
         </section>
       </div>
+      <section className="max-w-frame mx-auto px-4">
+        <BrowseStyle />
+        <Testimonials />
+      </section>
     </Layout>
   );
 }
