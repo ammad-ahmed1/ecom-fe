@@ -12,7 +12,7 @@ import { Button } from "../ui/button";
 
 const ProductCard = ({ product }) => {
   return (
-    <Card className="w-[300px] text-left">
+    <Card className="w-[275px] md:w-[300px] text-left">
       {/* Image */}
       <CardHeader className="p-0">
         <img

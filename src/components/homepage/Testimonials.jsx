@@ -2,15 +2,18 @@ import React from "react";
 import { testimonials } from "@/data/testimonials";
 import { FullStar } from "@/svgs/StarsIcons";
 import Slider from "react-slick";
+import { useMediaQuery } from "react-responsive";
 
 const Testimonials = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
   var settings = {
     className: "center",
     dots: false,
     infinite: true,
     centerPadding: "60px",
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: isMobile ? 1 : isTablet ? 2 : 3,
     slidesToScroll: 1,
   };
 
