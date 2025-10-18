@@ -1,16 +1,46 @@
 import React from "react";
 import ProductCard from "../shared/ProductCard";
 import Slider from "react-slick";
+import { useMediaQuery } from "react-responsive";
 
 const HotItems = ({ heading, products }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
+
   var settings = {
     className: "center",
     dots: false,
     infinite: true,
     centerPadding: "0px",
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: isMobile ? 1 : isTablet ? 2 : 4,
     slidesToScroll: 1,
+    // responsive: [
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 3,
+    //       infinite: true,
+    //       dots: true,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 600,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 2,
+    //       initialSlide: 2,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    // ],
   };
 
   return (
